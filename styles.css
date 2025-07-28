@@ -12,8 +12,8 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #ffffff;
+    color: #e0e0e0;
+    background-color: #1a1a1a;
 }
 
 .container {
@@ -27,7 +27,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(26, 26, 26, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
@@ -60,7 +60,7 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: #e0e0e0;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
@@ -94,7 +94,7 @@ body {
 .bar {
     width: 25px;
     height: 3px;
-    background: #333;
+    background: #e0e0e0;
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -104,7 +104,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     padding-top: 80px;
 }
 
@@ -134,14 +134,14 @@ body {
 
 .hero-subtitle {
     font-size: 1.5rem;
-    color: #666;
+    color: #b0b0b0;
     margin-bottom: 1.5rem;
     font-weight: 500;
 }
 
 .hero-description {
     font-size: 1.1rem;
-    color: #555;
+    color: #cccccc;
     margin-bottom: 2rem;
     line-height: 1.8;
 }
@@ -204,7 +204,7 @@ body {
 }
 
 .stat p {
-    color: #666;
+    color: #b0b0b0;
     font-weight: 500;
 }
 
@@ -215,12 +215,13 @@ body {
 }
 
 .profile-card {
-    background: white;
+    background: #2d2d2d;
     padding: 3rem;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     text-align: center;
     max-width: 400px;
+    border: 1px solid #404040;
 }
 
 .profile-avatar {
@@ -247,13 +248,13 @@ body {
 }
 
 .tech-tag {
-    background: #f8f9fa;
+    background: #404040;
     color: #667eea;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
-    border: 1px solid #e9ecef;
+    border: 1px solid #555555;
 }
 
 /* Section Styles */
@@ -266,12 +267,12 @@ section {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 3rem;
-    color: #333;
+    color: #e0e0e0;
 }
 
 /* About Section */
 .about {
-    background: #f8f9fa;
+    background: #2d2d2d;
 }
 
 .about-content {
@@ -283,7 +284,7 @@ section {
 
 .about-text p {
     font-size: 1.1rem;
-    color: #555;
+    color: #cccccc;
     margin-bottom: 1.5rem;
     line-height: 1.8;
 }
@@ -291,15 +292,16 @@ section {
 .education h3 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    color: #333;
+    color: #e0e0e0;
 }
 
 .education-item {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: white;
+    background: #404040;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #555555;
 }
 
 .education-header {
@@ -311,7 +313,7 @@ section {
 
 .education-header h4 {
     font-weight: 600;
-    color: #333;
+    color: #e0e0e0;
 }
 
 .year {
@@ -331,11 +333,12 @@ section {
 }
 
 .skill-category {
-    background: white;
+    background: #2d2d2d;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    border: 1px solid #404040;
 }
 
 .skill-category:hover {
@@ -345,7 +348,7 @@ section {
 .skill-category h3 {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: #e0e0e0;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -362,13 +365,13 @@ section {
 }
 
 .skill-tag {
-    background: #f8f9fa;
+    background: #404040;
     color: #667eea;
     padding: 0.6rem 1.2rem;
     border-radius: 25px;
     font-size: 0.9rem;
     font-weight: 500;
-    border: 1px solid #e9ecef;
+    border: 1px solid #555555;
     transition: all 0.3s ease;
 }
 
@@ -380,7 +383,7 @@ section {
 
 /* Projects Section */
 .projects {
-    background: #f8f9fa;
+    background: #2d2d2d;
 }
 
 .projects-grid {
@@ -390,11 +393,12 @@ section {
 }
 
 .project-card {
-    background: white;
+    background: #404040;
     border-radius: 15px;
     padding: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    border: 1px solid #555555;
 }
 
 .project-card:hover {
@@ -410,7 +414,7 @@ section {
 
 .project-header h3 {
     font-size: 1.4rem;
-    color: #333;
+    color: #e0e0e0;
 }
 
 .project-badge {
@@ -423,7 +427,7 @@ section {
 }
 
 .project-description {
-    color: #666;
+    color: #cccccc;
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
@@ -436,13 +440,13 @@ section {
 }
 
 .tech-badge {
-    background: #f8f9fa;
+    background: #555555;
     color: #667eea;
     padding: 0.4rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid #e9ecef;
+    border: 1px solid #666666;
 }
 
 .project-features ul {
@@ -452,7 +456,7 @@ section {
 
 .project-features li {
     padding: 0.3rem 0;
-    color: #555;
+    color: #cccccc;
     position: relative;
     padding-left: 1.5rem;
 }
@@ -492,12 +496,13 @@ section {
 }
 
 .achievement-card {
-    background: white;
+    background: #404040;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     text-align: center;
     transition: transform 0.3s ease;
+    border: 1px solid #555555;
 }
 
 .achievement-card:hover {
@@ -523,17 +528,17 @@ section {
 .achievement-card h3 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #e0e0e0;
 }
 
 .achievement-card p {
-    color: #666;
+    color: #cccccc;
     line-height: 1.6;
 }
 
 /* Contact Section */
 .contact {
-    background: #f8f9fa;
+    background: #2d2d2d;
 }
 
 .contact-content {
@@ -545,11 +550,11 @@ section {
 .contact-info h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #e0e0e0;
 }
 
 .contact-info p {
-    color: #666;
+    color: #cccccc;
     margin-bottom: 2rem;
     line-height: 1.6;
 }
@@ -564,9 +569,10 @@ section {
     gap: 1rem;
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: white;
+    background: #404040;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #555555;
 }
 
 .contact-item i {
@@ -578,12 +584,12 @@ section {
 
 .contact-item h4 {
     font-weight: 600;
-    color: #333;
+    color: #e0e0e0;
     margin-bottom: 0.3rem;
 }
 
 .contact-item p {
-    color: #666;
+    color: #cccccc;
     margin: 0;
 }
 
@@ -610,10 +616,11 @@ section {
 }
 
 .contact-form {
-    background: white;
+    background: #404040;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid #555555;
 }
 
 .form-group {
@@ -624,25 +631,29 @@ section {
 .form-group textarea {
     width: 100%;
     padding: 1rem;
-    border: 2px solid #e9ecef;
+    border: 2px solid #555555;
     border-radius: 10px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
     font-family: inherit;
+    background: #2d2d2d;
+    color: #e0e0e0;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: #667eea;
+    background: #333333;
 }
 
 /* Footer */
 .footer {
-    background: #333;
+    background: #1a1a1a;
     color: white;
     text-align: center;
     padding: 2rem 0;
+    border-top: 1px solid #404040;
 }
 
 .footer-content p {
@@ -660,12 +671,13 @@ section {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: white;
+        background-color: #2d2d2d;
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
         padding: 2rem 0;
+        border-top: 1px solid #404040;
     }
 
     .nav-menu.active {
@@ -763,7 +775,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #2d2d2d;
 }
 
 ::-webkit-scrollbar-thumb {
