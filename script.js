@@ -194,6 +194,10 @@ function typeWriter(element, text, speed = 100) {
 window.addEventListener('load', () => {
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
+        // Fix the heading if HTML tags are showing
+        if (heroTitle.innerHTML.includes('<span class="highlight">')) {
+            heroTitle.innerHTML = 'Hi, I\'m <span class="highlight">Shruti Jauhari</span>';
+        }
         const originalText = heroTitle.innerHTML;
         typeWriter(heroTitle, originalText, 50);
     }
@@ -260,6 +264,16 @@ document.querySelectorAll('.social-link').forEach(link => {
 // Add loading animation
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
+    
+    // Fix heading display issue
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) {
+        // Remove any HTML entities and fix the heading
+        const currentText = heroTitle.textContent || heroTitle.innerText;
+        if (currentText.includes('<span') || currentText.includes('&lt;')) {
+            heroTitle.innerHTML = 'Hi, I\'m <span class="highlight">Shruti Jauhari</span>';
+        }
+    }
 });
 
 // Counter animation for stats
