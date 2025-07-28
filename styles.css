@@ -145,6 +145,16 @@ body {
     }
 }
 
+/* Alternative approach for better compatibility */
+.hero-title .highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #667eea;
+    font-weight: 700;
+}
+
 .hero-subtitle {
     font-size: 1.5rem;
     color: #b0b0b0;
@@ -254,6 +264,27 @@ body {
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Fallback when image doesn't load */
+.profile-avatar img:not([src]),
+.profile-avatar img[src=""],
+.profile-avatar img[src*="profile-photo"]:not([src*=".jpg"]):not([src*=".jpeg"]):not([src*=".png"]) {
+    display: none;
+}
+
+.profile-avatar:not(:has(img))::before {
+    content: "SJ";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .tech-stack {
